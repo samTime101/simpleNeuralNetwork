@@ -13,15 +13,15 @@ int main() {
     double weight1 = 0.0;
     double weight2 = 0.0;
     double bias = 0.0;
-
+//default training set for addition
     double training_inputs[4][2] = {
-        {6.0, 3.0}, 
-        {9.0, 3.0}, 
-        {8.0, 2.0},
-        {16.0, 4.0}  
+        {1.0, 2.0}, 
+        {3.0, 4.0}, 
+        {4.0, 2.0},
+        {10.0, 4.0}  
 
     };
-    double training_outputs[4] = {2.0, 3.0, 4.0,4.0}; 
+    double training_outputs[4] = {3.0, 7.0, 6.0,14.0}; 
     double learning_rate = 0.01;
 
     for (int epoch = 0; epoch < 20000; epoch++) {
